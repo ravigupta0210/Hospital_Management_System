@@ -18,7 +18,7 @@ const Login = () => {
     try {
       await axios
         .post(
-          "https://zany-pear-swallow-vest.cyclic.app/api/v1/user/login",
+          "http://localhost:4000/api/v1/user/login",
           { email, password, confirmPassword, role: "Patient" },
           {
             withCredentials: true,
